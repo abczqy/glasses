@@ -1,0 +1,73 @@
+@import "all";
+/* list */
+.list{
+  width:100%;
+  margin:0 auto 24px;
+  height:16px;
+  font-size: 12px;
+}
+/* member */
+.member{
+  width:100%;
+  margin:0 auto 160px;
+  div>div:hover{
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    box-shadow: 0 5px 5px #c1c1c1;
+    cursor: $cursor;
+  }
+  header{
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    a{
+      color:nth($main,2);
+    }
+  }
+  p{
+    font-size: 12px;
+    text-align: center;
+    color:nth($main,1);
+  }
+}
+.member-top{
+  width:100%;
+  .r,.l{
+    width:49.5%;
+    background: #ebebeb;
+    header{
+      margin-top: 20%;
+    }
+  }
+}
+.member-bottom{
+  width:100%;
+  .item{
+    width:32.6666%;
+    background: #ebebeb;
+    header{
+      margin-top:15%;
+    }
+  }
+}
+@media screen and(min-width:1367px){
+  .member{
+    header{
+      font-size: 24px;
+    }
+  }
+}
+@media screen and(max-width:1200px){
+  .member{
+    header{
+      font-size: 18px;
+    }
+  }
+}

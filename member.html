@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>千叶眼镜-会员</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/member.css">
+</head>
+<body>
+<!-- 公用head部分 -->
+<div class="all-head">
+    <div class="top">
+        <ul class="head-left">
+            <li><a href=""><img src="images/index/custom.png" alt=""></a> </li>
+            <li style="color:#666;">|</li>
+            <li> <a href=""><img src="images/index/store.png" alt=""></a></li>
+        </ul>
+        <ul class="head-right">
+            <li style="margin-right: 15px"><a href="login.html">登录/注册</a></li>
+            <li style="margin-right: 5px"><a href=""><img src="images/index/shopping-bag.png" alt=""></a></li>
+            <li><a href=""><img src="images/index/search.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <a href="index.html"><img src="images/index/logo.png" alt=""></a>
+    </div>
+    <ul id="menu">
+        <li><a href="male.html">男士</a></li>
+        <li><a href="female.html">女士</a></li>
+        <li><a href="customization.html">定制</a></li>
+        <li><a href="technology.html">千叶</a></li>
+        <li class="active"><a href="#">会员</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<div class="line" style="margin-bottom: 32px"></div>
+<!-- main -->
+<div class="main">
+    <!-- list -->
+    <div class="list">
+        <p><a href="index.html">首页</a> > <a href="#">会员</a></p>
+    </div>
+    <!-- member -->
+    <div class="member">
+        <div class="member-top">
+            <div class="l" style="margin-right: 1%">
+                <header><a href="login.html">个人信息 ></a></header>
+                <p>管理账户设置、付款和地址信息</p>
+            </div>
+            <div class="r">
+                <header><a href="">订单查询 ></a></header>
+                <p>查询您的订单现在的状态</p>
+            </div>
+        </div>
+        <div class="member-bottom">
+            <div class="item l" style="margin-right: 1%">
+                <header><a href="">光度档案 ></a></header>
+                <p>查看最近一次眼光信息，维护视力健康</p>
+            </div>
+            <div class="item l" style="margin-right: 1%">
+                <header><a href="">积分管理 ></a></header>
+                <p>积分抵用现金，享受更多优惠</p>
+            </div>
+            <div class="item l">
+                <header><a href="">免费护理 ></a></header>
+                <p>眼镜清洗以及更多免费服务</p>
+            </div>
+        </div>
+        <div class="member-bottom">
+            <div class="item l" style="margin-right: 1%">
+                <header><a href="">专享折扣 ></a></header>
+                <p>抽取专享折扣，开启惊喜购物之旅</p>
+            </div>
+            <div class="item l" style="margin-right: 1%">
+                <header><a href="">优惠券 ></a></header>
+                <p>拥有的优惠券信息</p>
+            </div>
+            <div class="item l">
+                <header><a href="">生日福利 ></a></header>
+                <p>千叶生日祝福，领取独特生日福利</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 共用footer部分 -->
+<div class="clear"></div>
+<div class="footer">
+    <div class="footer-main">
+        <div class="main-l">
+            <ul class="footer-ul">
+                <li class="ul-head">获取帮助</li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提货卡查询</a></li>
+                <li><a href="">保养与维修</a></li>
+                <li><a href="">网上咨询</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <li class="ul-head">关于公司</li>
+                <li><a href="">千叶新闻</a></li>
+                <li><a href="">投资人</a></li>
+                <li><a href="">招贤纳士</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <li class="ul-head">关注千叶</li>
+                <li><a href="" class="withpic"><img src="images/index/weixin.png" alt=""> 微信</a></li>
+                <li><a href="" class="withpic"><img src="images/index/web.png" alt=""> 微博</a></li>
+            </ul>
+            <p class="message">
+                重庆千叶眼镜连锁有限公司，Inc.All Right Reserved
+            </p>
+        </div>
+        <div class="main-r">
+            <div class="form-group" style="margin-bottom: 50px">
+                <header>订阅千叶电子咨询</header>
+                <input type="text" placeholder="电子邮件地址"><a href="" id="a1"></a>
+            </div>
+            <div class="form-group">
+                <header>店铺地址查询</header>
+                <input type="text" placeholder="城市、街道"><a href="" id="a2"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/all.js"></script>
+<script>
+    function hei(){
+        var heitop=parseFloat($(".member-top .l").css("width"))*0.6084;
+        var heibot=parseFloat($(".member").css("width"))*0.1666;
+        var margin=parseFloat($(".member .l").css("margin-right"));
+        $(".member-top").css({"height":heitop+'px',"margin-bottom":margin+'px'});
+        $(".member-top div").css("height",heitop+'px');
+        $(".member-bottom div").css({"height":heibot+'px',"margin-bottom":margin+'px'});
+        $(".member").css("height",heitop+heibot*2+margin*2+'px');
+    }
+    $(function(){
+        hei();
+        $(window).resize(hei);
+    });
+</script>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>千叶眼镜-女士</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/female.css">
+</head>
+<body>
+<!-- 公用head部分 -->
+<div class="all-head">
+    <div class="top">
+        <ul class="head-left">
+            <li><a href=""><img src="images/index/custom.png" alt=""></a> </li>
+            <li style="color:#666;">|</li>
+            <li> <a href=""><img src="images/index/store.png" alt=""></a></li>
+        </ul>
+        <ul class="head-right">
+            <li style="margin-right: 15px"><a href="login.html">登录/注册</a></li>
+            <li style="margin-right: 5px"><a href=""><img src="images/index/shopping-bag.png" alt=""></a></li>
+            <li><a href=""><img src="images/index/search.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <a href="index.html"><img src="images/index/logo.png" alt=""></a>
+    </div>
+    <ul id="menu">
+        <li><a href="male.html">男士</a></li>
+        <li class="active"><a href="#">女士</a></li>
+        <li><a href="customization.html">定制</a></li>
+        <li><a href="technology.html">千叶</a></li>
+        <li><a href="member.html">会员</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<!-- banner -->
+<div class="banner">
+    <a href="femalecheck.html"><img src="images/female/banner.png"></a>
+</div>
+<!-- main -->
+<div class="main">
+    <!-- list -->
+    <div class="list">
+        <p><a href="index.html">首页</a> > <a href="#">女士</a></p>
+    </div>
+    <!-- show -->
+    <div class="show">
+        <div class="show-cont1">
+            <div class="cont1 l">
+                <a href="femalecheck.html"><img src="images/female/Women’s%20Optical.png" class="show1"></a>
+            </div>
+            <div class="cont2 r">
+                <a href="femalecheck.html"><img src="images/female/Women’s%20Sunglasses.png" class="show2"></a>
+            </div>
+        </div>
+        <div class="show-cont2">
+            <div class="cont2 l">
+                <a href="femalecheck.html"><img src="images/female/woody%20Style.png" class="show3"></a>
+            </div>
+            <div class="cont1 r">
+                <a href="femalecheck.html"><img src="images/female/Trendy%20Style.png" class="show4"></a>
+            </div>
+        </div>
+    </div>
+    <!-- wanted -->
+    <div class="wanted">
+        <header>Most Wanted</header>
+        <p>特别推荐</p>
+        <div>
+            <a href="detail.html"><img src="images/index/most%20wanted%201.png" style="margin-right: 12.5%"></a>
+            <a href="detail.html"><img src="images/index/most%20wanted%202.png" style="margin-right: 12.5%"></a>
+            <a href="detail.html"><img src="images/index/most%20wanted%203.png"></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- 共用footer部分 -->
+<div class="clear"></div>
+<div class="footer">
+    <div class="footer-main">
+        <div class="main-l">
+            <ul class="footer-ul">
+                <li class="ul-head">获取帮助</li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提货卡查询</a></li>
+                <li><a href="">保养与维修</a></li>
+                <li><a href="">网上咨询</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <li class="ul-head">关于公司</li>
+                <li><a href="">千叶新闻</a></li>
+                <li><a href="">投资人</a></li>
+                <li><a href="">招贤纳士</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <li class="ul-head">关注千叶</li>
+                <li><a href="" class="withpic"><img src="images/index/weixin.png" alt=""> 微信</a></li>
+                <li><a href="" class="withpic"><img src="images/index/web.png" alt=""> 微博</a></li>
+            </ul>
+            <p class="message">
+                重庆千叶眼镜连锁有限公司，Inc.All Right Reserved
+            </p>
+        </div>
+        <div class="main-r">
+            <div class="form-group" style="margin-bottom: 50px">
+                <header>订阅千叶电子咨询</header>
+                <input type="text" placeholder="电子邮件地址"><a href="" id="a1"></a>
+            </div>
+            <div class="form-group">
+                <header>店铺地址查询</header>
+                <input type="text" placeholder="城市、街道"><a href="" id="a2"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/all.js"></script>
+<script>
+    $(function(){
+        function show(){
+            $(".show").css("height",$(".show").width()*0.8333+'px');
+            $(".cont1 img").css("height",$(".cont2 img").css("height"))
+        }
+        show();
+        $(window).resize(function(){
+            show();
+        })
+    })
+</script>
+</html>
